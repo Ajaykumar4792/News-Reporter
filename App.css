@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: silver;
+    box-shadow: 0 0 5px 5px silver;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav ul li {
+    text-decoration: none;
+}
+
+.link {
+    color: gray;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.2s all linear;
+}
+
+.link:hover {
+    color: black;
+    font-weight: bolder;
+    transition: 0.2s all linear;
+    text-shadow: 0 5px 10px black;
+}
+
+.display-news {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 3%;
+}
+
+.inner-news-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid silver;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px 5px silver;
+    text-wrap: wrap;
+}
+
+.news-pic {
+    height: 70vh;
+    width: 70vw;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px 5px silver;
+}
+
+@media screen and (max-width:320px) {
+    .nav {
+        background-color: silver;
+        box-shadow: 0 0 5px 5px silver;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        overflow-x: scroll;
+        z-index: 1;
+    }
+    .display-news {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10%;
+    }
+    .inner-news-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 2px solid silver;
+        margin-top: 10px;
+        padding: 10px;
+        box-shadow: 0 0 5px 5px silver;
+        text-wrap: wrap;
+    }
+    .news-pic {
+        height: 70vh;
+        width: 70vw;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 0 0 5px 5px silver;
+    }
+}
